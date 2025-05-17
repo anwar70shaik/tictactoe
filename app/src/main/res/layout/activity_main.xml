@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#ECEFF1">
+
+    <!-- Game Status Text -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player X's Turn"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:textColor="#212121"
+        android:layout_marginBottom="20dp" />
+
+    <!-- GridLayout for Tic-Tac-Toe Board -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_marginBottom="20dp">
+
+        <!-- Buttons for Grid -->
+        <Button
+            android:id="@+id/btn00"
+            style="@style/GridButton" />
+        <Button
+            android:id="@+id/btn01"
+            style="@style/GridButton" />
+        <Button
+            android:id="@+id/btn02"
+            style="@style/GridButton" />
+
+        <Button
+            android:id="@+id/btn10"
+            style="@style/GridButton" />
+        <Button
+            android:id="@+id/btn11"
+            style="@style/GridButton" />
+        <Button
+            android:id="@+id/btn12"
+            style="@style/GridButton" />
+
+        <Button
+            android:id="@+id/btn20"
+            style="@style/GridButton" />
+        <Button
+            android:id="@+id/btn21"
+            style="@style/GridButton" />
+        <Button
+            android:id="@+id/btn22"
+            style="@style/GridButton" />
+    </GridLayout>
+
+    <!-- Restart Button -->
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restart Game"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="@color/purple_500"
+        android:padding="12dp"
+        android:layout_marginTop="10dp" />
+</LinearLayout>
